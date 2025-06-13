@@ -49,6 +49,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -56,4 +58,18 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation("io.ktor:ktor-client-core:2.3.1")
+    implementation("io.ktor:ktor-client-android:2.3.1")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.1")
+    implementation("io.ktor:ktor-client-cio:2.3.1")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1")
+    implementation("io.insert-koin:koin-android:3.5.3")
+    implementation("io.insert-koin:koin-androidx-compose:3.5.3")
+    implementation("io.coil-kt.coil3:coil-compose:3.2.0")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.1")
+
 }
