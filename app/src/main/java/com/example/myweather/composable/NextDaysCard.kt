@@ -78,12 +78,13 @@ fun NextDaysCard(
                         .offset(y = 3.dp)
                 )
                 Text(
-                    maxTemperature.toString(),
-                    fontSize = 16.sp,
+                    text = "$maxTemperature °C",
+                    fontSize = 14.sp,
                     letterSpacing = 0.25.sp,
                     fontFamily = urbanistFamily,
                     fontWeight = FontWeight(500),
                     textAlign = TextAlign.Center,
+                    color = Color(0xDE060414)
                 )
             }
             VerticalDivider(
@@ -102,13 +103,13 @@ fun NextDaysCard(
                         .offset(y = 3.dp)
                 )
                 Text(
-                    minTemperature.toString(),
-                    fontSize = 16.sp,
+                    text = "$minTemperature °C",
+                    fontSize = 14.sp,
                     letterSpacing = 0.25.sp,
                     fontFamily = urbanistFamily,
                     fontWeight = FontWeight(500),
                     textAlign = TextAlign.Center,
-                    color = SubTemperatureColor,
+                    color = Color(0xDE060414)
                 )
             }
         }

@@ -62,6 +62,7 @@ fun WeatherContent(state: WeatherUiState) {
 
             item {
                 LocationRow()
+                Spacer(modifier = Modifier.height(12.dp))
                 CurrentWeatherIcon(image = weatherInfo.getWeatherIcon())
             }
             item {
@@ -93,7 +94,7 @@ fun WeatherContent(state: WeatherUiState) {
                             color = TemperatureColor
                         ),
                         modifier = Modifier
-                            .padding(vertical = 24.dp)
+                            .padding(vertical = 24.dp, horizontal = 12.dp)
                     )
 
                     LazyRow(
@@ -150,8 +151,6 @@ fun WeatherContent(state: WeatherUiState) {
                                 )
                             }
                         }
-
-
                     }
                 }
 

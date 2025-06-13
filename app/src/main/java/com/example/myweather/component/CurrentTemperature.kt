@@ -23,7 +23,6 @@ fun CurrentTemperature(
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-
     ) {
         Text(
             text = temperature,
